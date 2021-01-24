@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<head><title>{Title}</title>
+<link rel="shortcut icon" href="{Favicon}">
+
+<!----------TOOLTIPS SCRIPT---------->
+ 
+<link href="https://static.tumblr.com/5omyijl/bzrn2yg7i/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://static.tumblr.com/5omyijl/RZtn2yg9v/jquery.style-my-tooltips.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+$("[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:200,
+tip_fade_speed:300
+});
+});
+})(jQuery);
+</script>
+
+<!------FONTS------>
+
+<link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=ABeeZee|IBM+Plex+Mono|IBM+Plex+Sans|Questrial|Karla|Rubik" rel="stylesheet">
+
+<style type="text/css">
+
+@font-face { font-family: "dalmatins"; src: url('https://dl.dropboxusercontent.com/s/vt2bux883emjhf3/Dalmatins.otf') ;}
+
+
+/*------tooltips-----*/
+ 
+#s-m-t-tooltip {
+max-width:300px;
+margin:15px;
+padding:5px;
+background:#b87a69;
+color:#fff;
+z-index:999999999999999999999999;
+font-size:8px;
+font-style:none;
+letter-spacing:4px;
+font-family:'abeezee';
+text-transform:lowercase;
+box-shadow:1px 1px 3px rgba(0,0,0,.0);
+border-radius:5px;
+}
+
+/*------scrollbar-----*/
+
+ ::-webkit-scrollbar-thumb {
+    height:auto;
+    background-color:transparent;
+    border-radius:0px;
+    }
+    ::-webkit-scrollbar {
+    height:0px;
+    width:0px;
+    background-color: transparent;
+    border-radius:50px;
+    }  
+
+/*------basics-----*/
+
+/*---- to change the two accent colors, search for #b87a69 (the pink) and #546b6b (the teal)----*/
+
+/*---- body fonts available: questrial, abeezee, & ibm plex sans, ibm plex mono, karla, & rubik ----*/
+
+body {
+background:#182020 url('https://image.ibb.co/hXE3gm/hl3.png') repeat right top fixed; /*----change your background color and image here----*/
+background-size:cover;
+color:#666; /*---- change the text color here ----*/
+font-family:'rubik';
+line-height:15px;
+font-size:11px;
+margin:0;
+text-align:left;
+}
+
+a {
+color:#546b6b;
+text-decoration:none;
+}
+ 
+a:hover {
+text-decoration:none;
+color:#b87a69;
+-webkit-transition:all 0.5s;
+-moz-transition:all 0.5s;
+-ms-transition:all 0.5s;
+-o-transition:all 0.5s;
+transition:all 0.5s;
+}
+
+b, strong {
+color:#b87a69; 
+text-transform:uppercase;
+letter-spacing:3px;
+}
+
+i, em {
+color:#546b6b;
+font-family:'dalmatins';
+font-style:normal;
+font-weight:bold;
+}
+
+#content {
+width:100%;
+}
+
+#container {
+left:50%;
+margin-left:-350px;
+width:700px;
+top:50%;
+margin-top:-210px;
+height:460px;
+background:#eee;
+position:fixed;
+padding-left:15px;
+padding-right:0px;
+border-radius:10px;
+}
+
+.sidepic {
+width:250px;
+height:460px;
+display:inline-block;
+position:fixed;
+margin-left:450px;
+}
+
+.sidepic img {
+border-radius:0px 5px 5px 0px;
+width:250px;
+height:460px;
+opacity:0.8;
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+}
+
+h1 {
+font-family:'dalmatins';
+font-size:24px;
+color:#b87a69;
+  text-transform:lowercase;
+  text-align:left;
+  margin-left:10px;
+  margin-top:30px;
+  z-index:99;
+  display:inline-block;
+  width:260px;
+}
+
+h2 {
+letter-spacing:3px;
+font-weight:bold;
+font-size:12px;
+text-align:center;
+text-transform:uppercase;
+width:430px;
+margin-top:20px;
+color:#546b6b;
+}
+
+.links {
+width:130px;
+display:inline-block;
+margin-left:5px;
+background-color:#546b6b;
+border-radius:200px;
+padding:5px 10px 5px 10px;
+font-family:'ibm plex sans'; /*---- you can change the font everywhere except here, otherwise the links won't look right ----*/
+}
+
+.links a {
+color:#eee;
+margin-right:4px;
+margin-left:4px;
+}
+
+.links a:hover {
+color:#b87a69;
+}
+
+.instapic {
+width:100%;
+margin-top:30px;
+margin-bottom:20px;
+}
+
+.instapic img {
+width:75px;
+height:75px;
+border-radius:7px;
+margin-right:5px;
+margin-left:5px;
+z-index:9999999999999999;
+}
+
+.credit {
+font-size:15px;
+position:fixed;
+font-weight:normal;
+bottom:10px;
+right:15px;
+z-index:10;
+text-align:right;
+}
+
+.longdesc {
+background-color:#fff;
+width:220px;
+height:180px;
+border-radius:5px;
+display:inline-block;
+margin-left:10px;
+margin-top:10px;
+padding:10px;
+overflow-y:scroll;
+text-align:justify;
+text-transform:lowercase;
+line-height:200%;
+}
+
+.shortdesc {
+width:120px;
+height:180px;
+overflow-y:scroll;
+text-transform:lowercase;
+text-align:center;
+display:inline-block;
+background-color:#fff;
+border-radius:5px;
+padding:10px;
+margin-left:30px;
+line-height:200%;
+}
+
+.navlinks {
+width:400px;
+height:35px;
+border-radius:0px 0px 10px 10px;
+background-color:#546b6b;
+margin:auto;
+text-align:center;
+}
+
+.navlinks a {
+font-weight:bold;
+font-size:12px;
+color:#eee;
+display:inline-block;
+margin-top:9px;
+margin-left:6px;
+margin-right:6px;
+}
+
+.navlinks a:hover {
+color:#b87a69;
+}
+ 
+.credit a {
+background-color:#b87a69;
+color:#fff;
+padding-top:6px;
+padding-bottom:3px;
+padding-right:7px;
+padding-left:6px;
+border-radius:5px;
+}
+ 
+.credit a:hover {
+    background-color:#fff;
+    color:#b87a69;
+    -moz-transition-duration:0.5s;
+    -webkit-transition-duration:0.5s;
+    -o-transition-duration:0.5s;
+}
+
+</style>
+</head>
+
+<body>
+<div id="content">
+
+<div id="container">
+
+<!---- change your sidebar picture here by replacing "https://via.placeholder.com/250x460" with your image. the dimensions are 250x460! --->
+
+<div class="sidepic"><img src="https://via.placeholder.com/250x460"></div>
+
+<!--- change your muse name here, don't delete the <h1> </h1> !! --->
+
+<h1>muse name.</h1>
+
+<!--- to change your link font icons, you can find more options at http://www.honeybee.suiomi.com, and follow the instructions there to replace your icons with whatever you want them to be --->
+
+<div class="links">
+<a title="musings" href="/"><span class="th th-key-o"></span></a>
+<a title="interactions" href="/"><span class="th th-pencil-o"></span></a>
+<a title="crushes" href="/"><span class="th th-heart-1-o"></span></a>
+<a title="playlist" href="/"><span class="th th-music-o"></span></a>
+<a title="pinterest" href="/"><span class="th th-push-pin-o"></span></a>
+<a title="extra" href="/"><span class="th th-app-o"></span></a>
+</div>
+
+<!---- here you can add the instagram-esque icons; the dimensions are 75x75! --->
+
+<div class="instapic">
+<img src="https://via.placeholder.com/75x75">
+<img src="https://via.placeholder.com/75x75">
+<img src="https://via.placeholder.com/75x75">
+<img src="https://via.placeholder.com/75x75">
+<img src="https://via.placeholder.com/75x75">
+</div>
+
+<!---here you can add a one line of text, maybe a quote or lyric! it looks best as one line but you CAN do two lines, just don't do more than that!--->
+
+<h2>come back to me, baby, i'll come back to you</h2>
+
+<!----here you can put a longer bit of text, maybe a character biography or whatever you want. it scrolls so you can put as much text as you'd like!---->
+
+<div class="longdesc">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas pharetra convallis posuere morbi leo urna molestie at elementum. Sapien nec sagittis aliquam malesuada. Dictumst vestibulum rhoncus est pellentesque elit. Nunc vel risus commodo viverra. Tellus molestie nunc non blandit massa enim nec dui. Ut sem viverra aliquet eget sit amet tellus cras. Augue neque gravida in fermentum et sollicitudin ac orci. Cras semper auctor neque vitae tempus. Faucibus in ornare quam viverra orci sagittis eu. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Eros donec ac odio tempor orci dapibus. Velit aliquet sagittis id consectetur. Et pharetra pharetra massa massa ultricies. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Vitae tortor condimentum lacinia quis vel eros donec ac odio. Consequat semper viverra nam libero justo laoreet sit amet. Cursus euismod quis viverra nibh cras.
+<br><br>
+Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pellentesque nec nam aliquam sem et tortor consequat id. Faucibus vitae aliquet nec ullamcorper. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed. Consequat ac felis donec et odio. Dignissim cras tincidunt lobortis feugiat vivamus at augue. Ut tortor pretium viverra suspendisse. Ornare quam viverra orci sagittis eu. Aenean et tortor at risus viverra adipiscing at. Vel turpis nunc eget lorem. Iaculis at erat pellentesque adipiscing commodo elit. Quis commodo odio aenean sed adipiscing diam donec. Morbi tincidunt augue interdum velit euismod in pellentesque massa. Morbi tristique senectus et netus et malesuada. Dictum varius duis at consectetur lorem.
+<br><br>
+Massa tempor nec feugiat nisl pretium fusce id velit. Metus aliquam eleifend mi in nulla posuere sollicitudin. Ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus. Dictum varius duis at consectetur lorem. Eros in cursus turpis massa tincidunt dui ut ornare. Tempor orci dapibus ultrices in iaculis nunc sed. Cras semper auctor neque vitae tempus quam pellentesque. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi. Massa eget egestas purus viverra accumsan in nisl. Auctor neque vitae tempus quam pellentesque nec. Non pulvinar neque laoreet suspendisse interdum consectetur libero id. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Aliquam malesuada bibendum arcu vitae. Tellus mauris a diam maecenas sed enim ut sem viverra. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Egestas tellus rutrum tellus pellentesque eu. Ut faucibus pulvinar elementum integer enim neque. Pretium fusce id velit ut tortor pretium viverra suspendisse potenti.
+
+</div>
+
+<!----here you can put a shorter bit of text, maybe stats or aesthetics or whatever you want, really. it scrolls so you can put as much text as you want! NOTE: to get the more bold font, highlight your text with <b></b>, and to get the more scripty font, highlight your text with <i></i> !--->
+
+<div class="shortdesc">
+
+<b>rainy days</b> and <i>starry nights</i>, carousel lights and <i>twinkling stars</i>, <b>crop tops</b>, knitting needles, lazy rivers, lit up <b>laptop keys</b>, <i>insomnia</i>, late night <u><b>drives</b></u>, <i>points on a map</i>, finding your place, <b>septum piercings</b>, <i>flower petals</i>, wood grain, soft velvet, <i>a warm breeze.</i>
+
+    
+</div>
+
+</div>
+
+</div>
+
+<!----here's the navigation part of the page where you can change the two links to link back to whatever pages you would like!--->
+
+<div class="navlinks">
+    <a href="/">home</a>
+    <a href="/ask">message</a>
+    <a href="/">link</a>
+    <a href="/">link</a>
+</div>
+
+<!---- please do NOT touch this---->
+
+<div class="credit">
+<a title="skyofrp" href="http://skyofrp.tumblr.com/"><span class="th th-avocado-o"></span></a></div>
+
+</body>
+</html>
